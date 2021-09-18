@@ -1,0 +1,13 @@
+:root {
+  --background-main: white;
+  --background-secondary: #FAF3E6;
+  --navbar-background: #022341;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Nunito', sans-serif; <-- for title on landing */
+}

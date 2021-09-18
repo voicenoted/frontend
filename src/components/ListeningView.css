@@ -1,0 +1,57 @@
+.ListeningView {
+  background-color: var(--background-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.ListeningView * {
+  text-align: center;
+  flex: 0;
+}
+
+.ListeningView .top-wrapper {
+  min-width: 200px;
+  width: 30vw;
+}
+
+.ListeningView img {
+  width: 100%;
+}
+
+.ListeningView .title {
+  font-weight: 700;
+  font-size: 1.3em;
+  margin-top: 20px;
+}
+
+.ListeningView .subtitle {
+  font-weight: 300;
+  font-size: 0.8em;
+  margin-top: 2.5px;
+}
+
+.ListeningView .player {
+  margin-top: 20px;
+}
+
+.ListeningView .player img {
+  width: 40px;
+}
+
+.ListeningView audio {
+  height: 40px;
+}
+
+.addNote {
+  background-color: #338B31;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  border-radius: 15%;
+  color: white;
+  height: 50px;
+  width: 150px;
+  font-size: 12px;
+}

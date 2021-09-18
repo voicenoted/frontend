@@ -1,0 +1,17 @@
+.App > * {
+  height: 100vh;
+  width: 100vw;
+  color: #022341;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App > *:first-child {
+  flex-grow: 1;
+  padding: 10vh 10vh;
+}
