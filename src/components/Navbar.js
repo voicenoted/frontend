@@ -13,7 +13,7 @@ import img_navbar_gear_stroke      from './../assets/icons/navbar_gear_stroke.sv
 
 class Navbar extends React.Component {
 
-  navbarElements = ['listen', 'discover', 'library', 'settings'];
+  navbarElements = ['listen', 'discover', 'notes', 'settings'];
 
   constructor(props) {
     super(props);
@@ -53,13 +53,13 @@ class NavbarButton extends React.Component {
     filled: {
       listen: img_navbar_listen_filled,
       discover: img_navbar_community_filled,
-      library: img_navbar_library_filled,
+      notes: img_navbar_library_filled,
       settings: img_navbar_gear_filled
     },
     stroke: {
       listen: img_navbar_listen_stroke,
       discover: img_navbar_community_stroke,
-      library: img_navbar_library_stroke,
+      notes: img_navbar_library_stroke,
       settings: img_navbar_gear_stroke
     }
   }

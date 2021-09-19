@@ -1,0 +1,79 @@
+.NotesView {
+  background-color: var(--background-secondary);
+  padding: 10vh 10vw !important;
+  text-align: left;
+}
+
+.NotesView > h2 {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  margin: -15px 0 15px;
+  position: relative;
+}
+
+.NotesView .section h2 {
+  font-size: 18px;
+}
+
+.NotesView .section p {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 3px 0 7px;
+}
+
+.NotesView .note {
+  box-shadow: 0 4px 4px 0 #00000025;
+  font-size: 12px;
+  font-style: italic;
+  padding: 6px 12px;
+  max-height: 4em;
+  line-height: 1.6em;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-align: left;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+.NotesView .note:not(:first-child) {
+  margin-top: 10px;
+}
+
+.NotesView .note > * {
+  margin: 0 5px;
+}
+
+.NotesView .note .playPause {
+  align-self: center;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.NotesView .note .content {
+  flex: 1;
+}
+
+.NotesView .note .dotdotdot {
+  align-self: center;
+  margin-left: 6px;
+}
+
+.EditNoteView {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 100%;
+}
+
+.EditNoteView > textarea {
+  flex-grow: 1;
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 8px;
+}

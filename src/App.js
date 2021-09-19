@@ -2,10 +2,12 @@ import Navbar from './components/Navbar';
 import React, { Component } from "react";
 import ListeningView from './components/ListeningView';
 import DiscoverView from './components/DiscoverView';
-import LibraryView from './components/LibraryView';
 import SettingsView from './components/SettingsView';
+import NotesView from './components/NotesView'
 
 import './App.css';
+
+import audio from './components/audio.json';
 
 class App extends Component {
 
@@ -25,9 +27,9 @@ class App extends Component {
   render() {
 
     let viewComponents = {
-      listen: <ListeningView title="412. Side Project Perfectionism" subtitle="Stories &amp; Cities" />,
+      listen: <ListeningView title={audio[0].title} subtitle={audio[0].subtitle} />,
       discover: <DiscoverView />,
-      library: <LibraryView />,
+      notes: <NotesView />,
       settings: <SettingsView />,
     }
 

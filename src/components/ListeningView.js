@@ -74,11 +74,12 @@ class ListeningView extends React.Component {
       
       let formData = new FormData();
       formData.append('file', await this.getAudioFile(audio));
-      formData.append('startTime', Math.floor(this.state.addNoteStartTime));
-      formData.append('endTime', Math.ceil(this.state.addNoteEndTime));
+      formData.append('startTime', startTime);
+      formData.append('endTime', endTime);
       
       let speechToTextRes = await axios({
         method: 'post',
+        // url: 'http://localhost:8000/speechToText',
         url: 'https://voicenoted.herokuapp.com/speechToText',
         headers: { 'Content-Type': 'multipart/form-data' },
         data: formData,
@@ -89,23 +90,17 @@ class ListeningView extends React.Component {
         })
       });
 
-      let abc = await axios.get('https://voicenoted.herokuapp.com/getNotes', {
-        params: {
-          token: TOKENNNNNNNNN,
-          audioid: 1,
-        }
-      });
+      console.log(speechToTextRes.data)
 
-      console.log(abc);
-
-      await axios.post('http://localhost:8000/saveNote', {
+      await axios.post('https://voicenoted.herokuapp.com/saveNote', {
         token: TOKENNNNNNNNN,
         timestamp: {
           start: startTime,
           end: endTime
         },
         audioid: 1,
-        content: speechToTextRes.data.result
+        content: speechToTextRes.data.text,
+        audioLink: speechToTextRes.data.audioLink
       }).catch((err) => {
         this.setState({
           popupError: true,
