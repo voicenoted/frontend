@@ -1,15 +1,14 @@
 import React from "react";
+import SearchBar from "./SearchBar";
+import './CommunityView.css';
+
 
 class CommunityView extends React.Component {
-
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return(
-      <div>
-        CommunityView
+      <div class="wrapper">
+        <div class="sectionHeader">Community</div>
+        <SearchBar/>
       </div>
     )
   }
