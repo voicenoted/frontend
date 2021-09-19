@@ -1,13 +1,13 @@
 import React from "react";
 import SearchBar from "./SearchBar";
-import './CommunityView.css';
+import './DiscoverView.css';
 
 
 class CommunityView extends React.Component {
   render() {
     return(
       <div class="wrapper">
-        <div class="sectionHeader">Community</div>
+        <div class="sectionHeader">Discover</div>
         <SearchBar/>
       </div>
     )
