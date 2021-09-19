@@ -1,0 +1,16 @@
+
+.wrapper {
+    background-image: url(/src/assets/Background.png);
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.sectionHeader  {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    top: -20px;
+}
+

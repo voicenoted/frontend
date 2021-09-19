@@ -13,7 +13,7 @@ import img_navbar_gear_stroke      from './../assets/icons/navbar_gear_stroke.sv
 
 class Navbar extends React.Component {
 
-  navbarElements = ['listen', 'community', 'library', 'settings'];
+  navbarElements = ['listen', 'discover', 'library', 'settings'];
 
   constructor(props) {
     super(props);
@@ -33,7 +33,13 @@ class Navbar extends React.Component {
       <div className="Navbar">
         {
           this.navbarElements.map((view, i) => {
-            return <NavbarButton key={i} changeSelected={this.changeSelected} changeView={this.props.changeView} view={view} selected={this.state.selected === view} />
+            return <NavbarButton 
+            key={i} 
+            changeSelected={this.changeSelected} 
+            changeView={this.props.changeView} 
+            view={view} 
+            selected={this.state.selected === view}
+             />
           })
         }
       </div>
@@ -46,13 +52,13 @@ class NavbarButton extends React.Component {
   navbarIcons = {
     filled: {
       listen: img_navbar_listen_filled,
-      community: img_navbar_community_filled,
+      discover: img_navbar_community_filled,
       library: img_navbar_library_filled,
       settings: img_navbar_gear_filled
     },
     stroke: {
       listen: img_navbar_listen_stroke,
-      community: img_navbar_community_stroke,
+      discover: img_navbar_community_stroke,
       library: img_navbar_library_stroke,
       settings: img_navbar_gear_stroke
     }

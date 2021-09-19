@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar';
 import React, { Component } from "react";
 import ListeningView from './components/ListeningView';
-import CommunityView from './components/CommunityView';
+import DiscoverView from './components/DiscoverView';
 import LibraryView from './components/LibraryView';
 import SettingsView from './components/SettingsView';
 
@@ -26,7 +26,7 @@ class App extends Component {
 
     let viewComponents = {
       listen: <ListeningView title="412. Side Project Perfectionism" subtitle="Stories &amp; Cities" />,
-      community: <CommunityView />,
+      discover: <DiscoverView />,
       library: <LibraryView />,
       settings: <SettingsView />,
     }
