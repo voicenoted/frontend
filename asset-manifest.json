@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/frontend/static/css/main.bde301bb.chunk.css",
-    "main.js": "/frontend/static/js/main.b62f1a84.chunk.js",
-    "main.js.map": "/frontend/static/js/main.b62f1a84.chunk.js.map",
+    "main.css": "/frontend/static/css/main.b05aef67.chunk.css",
+    "main.js": "/frontend/static/js/main.14a9a059.chunk.js",
+    "main.js.map": "/frontend/static/js/main.14a9a059.chunk.js.map",
     "runtime-main.js": "/frontend/static/js/runtime-main.da4b89b2.js",
     "runtime-main.js.map": "/frontend/static/js/runtime-main.da4b89b2.js.map",
-    "static/js/2.58a6b750.chunk.js": "/frontend/static/js/2.58a6b750.chunk.js",
-    "static/js/2.58a6b750.chunk.js.map": "/frontend/static/js/2.58a6b750.chunk.js.map",
+    "static/js/2.73f1ff1e.chunk.js": "/frontend/static/js/2.73f1ff1e.chunk.js",
+    "static/js/2.73f1ff1e.chunk.js.map": "/frontend/static/js/2.73f1ff1e.chunk.js.map",
     "index.html": "/frontend/index.html",
-    "static/css/main.bde301bb.chunk.css.map": "/frontend/static/css/main.bde301bb.chunk.css.map",
-    "static/js/2.58a6b750.chunk.js.LICENSE.txt": "/frontend/static/js/2.58a6b750.chunk.js.LICENSE.txt",
-    "static/media/audio_cover_1.08eb2b3d.png": "/frontend/static/media/audio_cover_1.08eb2b3d.png",
+    "static/css/main.b05aef67.chunk.css.map": "/frontend/static/css/main.b05aef67.chunk.css.map",
+    "static/js/2.73f1ff1e.chunk.js.LICENSE.txt": "/frontend/static/js/2.73f1ff1e.chunk.js.LICENSE.txt",
+    "static/media/audio_cover.08eb2b3d.png": "/frontend/static/media/audio_cover.08eb2b3d.png",
+    "static/media/audio_cover_1.4103535e.png": "/frontend/static/media/audio_cover_1.4103535e.png",
+    "static/media/audio_cover_2.c32254c3.png": "/frontend/static/media/audio_cover_2.c32254c3.png",
+    "static/media/audio_cover_3.2b4cc945.png": "/frontend/static/media/audio_cover_3.2b4cc945.png",
     "static/media/navbar_community_filled.e11a0d0e.svg": "/frontend/static/media/navbar_community_filled.e11a0d0e.svg",
     "static/media/navbar_community_stroke.8a966c29.svg": "/frontend/static/media/navbar_community_stroke.8a966c29.svg",
     "static/media/navbar_gear_filled.1eb524b9.svg": "/frontend/static/media/navbar_gear_filled.1eb524b9.svg",
@@ -25,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.da4b89b2.js",
-    "static/js/2.58a6b750.chunk.js",
-    "static/css/main.bde301bb.chunk.css",
-    "static/js/main.b62f1a84.chunk.js"
+    "static/js/2.73f1ff1e.chunk.js",
+    "static/css/main.b05aef67.chunk.css",
+    "static/js/main.14a9a059.chunk.js"
   ]
 }
