@@ -2,6 +2,7 @@ import React from "react";
 
 class CommunityView extends React.Component {
 
+  // eslint-disable-next-line
   constructor(props) {
     super(props)
   }

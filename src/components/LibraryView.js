@@ -2,6 +2,7 @@ import React from "react";
 
 class LibraryView extends React.Component {
 
+  // eslint-disable-next-line
   constructor(props) {
     super(props)
   }

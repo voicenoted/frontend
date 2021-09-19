@@ -58,6 +58,7 @@ class NavbarButton extends React.Component {
     }
   }
 
+  // eslint-disable-next-line
   constructor(props) {
     super(props);
   }
