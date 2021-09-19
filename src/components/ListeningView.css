@@ -33,12 +33,36 @@
 }
 
 .ListeningView .player {
-  margin-top: 20px;
+  margin: 20px 0;
+  width: 100%;
 }
 
-.ListeningView .player img {
+.ListeningView .player .playPause {
   width: 40px;
+  margin-top: 15px;
 }
+
+.ListeningView .player input[type='range'] {
+  width: 100%;
+}
+
+.ListeningView .player input[type='range']::-webkit-slider-runnable-track {
+/* .ListeningView .player input[type=range]::-moz-range-track {
+.ListeningView .player input[type=range]::-ms-fill-lower {
+.ListeningView .player input[type=range]::-ms-fill-upper {
+.ListeningView .player input[type=range]::-ms-track { */
+  background: rgb(120, 120, 120);
+  border-color: rgb(120, 120, 120);
+  height: 3px;
+}
+
+.ListeningView .player input[type='range']::-webkit-slider-thumb {
+  /* .ListeningView .player input[type=range]::-moz-range-track {
+  .ListeningView .player input[type=range]::-ms-fill-lower {
+  .ListeningView .player input[type=range]::-ms-fill-upper {
+  .ListeningView .player input[type=range]::-ms-track { */
+    margin-top: -7px;
+  }
 
 .ListeningView audio {
   height: 40px;
@@ -49,9 +73,10 @@
   text-align: center;
   justify-content: center;
   border: none;
-  border-radius: 15%;
+  border-radius: 8px;
   color: white;
   height: 50px;
   width: 150px;
   font-size: 12px;
+  padding: 5px 0;
 }

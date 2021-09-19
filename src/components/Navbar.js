@@ -69,8 +69,8 @@ class NavbarButton extends React.Component {
 
   render() {
     return (
-      <button class="NavbarButton" onClick={this.onClick}>
-        <img src={this.navbarIcons[this.props.selected ? 'filled' : 'stroke'][this.props.view]} />
+      <button className="NavbarButton" onClick={this.onClick}>
+        <img alt='icon' src={this.navbarIcons[this.props.selected ? 'filled' : 'stroke'][this.props.view]} />
       </button>
     );
   }
