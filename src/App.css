@@ -1,6 +1,6 @@
 .App > * {
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   color: #022341;
 }
 
@@ -9,6 +9,8 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  max-width: 375px;
+  margin: 0 auto;
 }
 
 .App > *:first-child {

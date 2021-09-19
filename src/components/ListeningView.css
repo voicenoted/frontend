@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .ListeningView * {
@@ -13,7 +13,8 @@
 
 .ListeningView .top-wrapper {
   min-width: 200px;
-  width: 30vw;
+  width: 200px;
+  /* width: 30vw; */
 }
 
 .ListeningView img {
