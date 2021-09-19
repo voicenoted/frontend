@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-    margin-left: -25px;
+    // margin-left: -25px;
     button {
         background-color: white;
         border: none;

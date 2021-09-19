@@ -3,7 +3,8 @@ import axios from 'axios';
 import playButton from './../assets/play.svg';
 import pauseButton from './../assets/pause.svg';
 import dotdotdot from './../assets/dotdotdot.svg';
-// import greenRect from './../assets/green_rect.svg';
+
+import { Title, SubHeader } from './PageHeader';
 
 import './NotesView.css';
 
@@ -64,8 +65,7 @@ class NotesView extends React.Component {
   renderNoteView() {
     return (
       <div className="NotesView">
-        <h2>Voicenotes</h2>
-        {/* <img src={greenRect} alt="green rectangle" /> */}
+        <Title title='Voicenotes' />
         <NotesSection display={!this.state.editingNote} title={audio[0].title} subtitle={audio[0].subtitle} notes={this.state.notes} editNote={this.editNote} />
         <EditNoteView display={this.state.editingNote} data={this.state.notes[this.state.editNoteIndex]} index={this.state.editNoteIndex} counter={this.state} stopEditNote={this.stopEditNote} setNoteContent={this.setNoteContent} />
       </div>
@@ -84,7 +84,7 @@ class NotesSection extends React.Component {
       return null;
     }
     return <div className="section">
-      <h2>{this.props.title}</h2>
+      <SubHeader title={this.props.title} />
       <p>{this.props.subtitle}</p>
       {this.props.notes.map((n, i) => {
         return <Note key={i} index={i} data={n} editNote={this.props.editNote} />
@@ -171,7 +171,7 @@ class EditNoteView extends React.Component {
         <Note data={this.props.data} />
         <textarea ref={this.textareaRef}></textarea>
         <div>
-          <button onClick={this.save}>Save</button>
+          <button className='saveNote' onClick={this.save}><i className="fas fa-fw fa-bookmark"></i> Save Note</button>
         </div>
       </div>
     );

@@ -39,7 +39,7 @@
 
 .ListeningView .player .playPause {
   height: 40px;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 
 .ListeningView .player input[type='range'] {
@@ -69,16 +69,17 @@
 }
 
 .ListeningView .time-wrapper .time {
-  position: absolute;
-  top: -2px;
+  /* position: absolute; */
+  /* top: -2px; */
+  line-height: 40px;
 }
 
 .ListeningView .time-wrapper .left {
-  left: -45px;
+  /* left: -45px; */
 }
 
 .ListeningView .time-wrapper .right {
-  right: -45px;
+  /* right: -45px; */
 }
 
 /* .addNote {
@@ -105,4 +106,19 @@
   width: 150px;
   font-size: 15px;
   padding: 8px 0;
+}
+
+.audioPlayer {
+  display: grid;
+  grid-template-columns: 64px 1fr 64px;
+  grid-template-rows: 36px 40px;
+}
+
+.audioPlayer > *:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.audioPlayer > * {
+  /* grid-row: 2 / 1;
+  grid-column: 1 / 1; */
 }

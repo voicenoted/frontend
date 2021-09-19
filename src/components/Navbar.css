@@ -15,4 +15,5 @@
 
 .NavbarButton > img {
   height: 48px;
+  image-rendering: pixelated;
 }

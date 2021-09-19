@@ -5,15 +5,16 @@ import audioCoverImg2 from './../assets/audio_cover_2.png';
 import audioCoverImg3 from './../assets/audio_cover_3.png';
 import styled from "styled-components"
 
+import { Title, SubHeader } from './PageHeader';
+
 const Podcasts = styled.div`
-    width: 320px;
     display: flex;
     flex-direction: row;
-    margin-left: -35px;
+    gap: 10px;
     overflow: scroll;
-    margin-top: 10px;
+    // margin-top: 10px;
     .pod {
-        padding: 10px;
+      padding: 10px 0;
     }
     .pic {
         width: 88px;
@@ -41,7 +42,6 @@ const Wrapper = styled.div`
         padding: 3px;
         margin-top: 15px;
         margin-bottom: -10px;
-        margin-left: -20px;
     }
 `
 
@@ -49,7 +49,8 @@ export class PodScroll extends Component {
     render() {
         return(
             <Wrapper>
-                <header>{this.props.title}</header>
+                <SubHeader title={this.props.title} />
+                {/* <header>{this.props.title}</header> */}
                 <Podcasts>
                     <Card className="pod">
                         <Card.Img className="pic" variant="top" src={audioCoverImg1} />

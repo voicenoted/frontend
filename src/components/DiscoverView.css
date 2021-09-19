@@ -1,11 +1,12 @@
 .wrapper {
-    background-color: #FAF3E6;
+  background-color: #FAF3E6;
+  text-align: left;
 }
 
 .sectionHeader  {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: left;
-    position: relative;
-    top: -20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+  top: -20px;
 }

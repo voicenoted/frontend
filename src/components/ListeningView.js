@@ -131,7 +131,7 @@ class ListeningView extends React.Component {
 
     return(
       <div className="ListeningView">
-        <div className="top-wrapper">
+        <div className="top-wrapper" style={{ paddingTop: 48 }}>
           <img src={audioCoverImg} alt="audio_cover_1.png" />
           <div className="title">{this.props.title}</div>
           <div className="subtitle">{this.props.subtitle}</div>
@@ -139,19 +139,21 @@ class ListeningView extends React.Component {
         
         <div className="player">
           <div className="time-wrapper">
-            <input
-              type="range"
-              min="0"
-              step="0.1"
-              max={Math.ceil(this.state.duration)}
-              value={this.state.currTime}
-              onChange={this.handleTimelineChange}
-              disabled={this.state.addingNote}
-            />
-            <span className="time left">{this.formatTime(this.state.currTime)}</span>
-            <span className="time right">{this.formatTime(this.state.duration)}</span>
+            <div class="audioPlayer">
+              <input
+                type="range"
+                min="0"
+                step="0.1"
+                max={Math.ceil(this.state.duration)}
+                value={this.state.currTime}
+                onChange={this.handleTimelineChange}
+                disabled={this.state.addingNote}
+              />
+              <span className="time left">{this.formatTime(this.state.currTime)}</span>
+              <img src={this.state.playing ? pauseButton : playButton} alt="play pause" onClick={this.togglePlay} className="playPause" />
+              <span className="time right">{this.formatTime(this.state.duration)}</span>
+            </div>
           </div>
-          <img src={this.state.playing ? pauseButton : playButton} alt="play pause" onClick={this.togglePlay} className="playPause" />
           <audio ref={this.audioRef} src={audio} type='audio/flac' onTimeUpdate={this.timeUpdate} onDurationChange={() => { this.setState({ duration: this.audioRef.current.duration }) }} />
         </div>
 

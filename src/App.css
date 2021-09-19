@@ -13,6 +13,6 @@
 
 .App > *:first-child {
   flex-grow: 1;
-  padding: 10vh 10vh;
+  padding: 36px;
   overflow-y: auto;
 }
