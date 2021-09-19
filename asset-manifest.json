@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/frontend/static/css/main.0b882a42.chunk.css",
+    "main.css": "/frontend/static/css/main.4bac615f.chunk.css",
     "main.js": "/frontend/static/js/main.dc07bea2.chunk.js",
     "main.js.map": "/frontend/static/js/main.dc07bea2.chunk.js.map",
     "runtime-main.js": "/frontend/static/js/runtime-main.da4b89b2.js",
@@ -8,7 +8,7 @@
     "static/js/2.704a6f6e.chunk.js": "/frontend/static/js/2.704a6f6e.chunk.js",
     "static/js/2.704a6f6e.chunk.js.map": "/frontend/static/js/2.704a6f6e.chunk.js.map",
     "index.html": "/frontend/index.html",
-    "static/css/main.0b882a42.chunk.css.map": "/frontend/static/css/main.0b882a42.chunk.css.map",
+    "static/css/main.4bac615f.chunk.css.map": "/frontend/static/css/main.4bac615f.chunk.css.map",
     "static/js/2.704a6f6e.chunk.js.LICENSE.txt": "/frontend/static/js/2.704a6f6e.chunk.js.LICENSE.txt",
     "static/media/audio_cover.08eb2b3d.png": "/frontend/static/media/audio_cover.08eb2b3d.png",
     "static/media/audio_cover_1.4103535e.png": "/frontend/static/media/audio_cover_1.4103535e.png",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.da4b89b2.js",
     "static/js/2.704a6f6e.chunk.js",
-    "static/css/main.0b882a42.chunk.css",
+    "static/css/main.4bac615f.chunk.css",
     "static/js/main.dc07bea2.chunk.js"
   ]
 }
