@@ -81,8 +81,9 @@ class ListeningView extends React.Component {
   }
 
   handleTimelineChange = (e) => {
-    console.log(e);
+    //if (!this.state.addingNote) {
     this.audioRef.current.currentTime = e.target.value;
+    //}
   }
 
   render() {
@@ -98,7 +99,14 @@ class ListeningView extends React.Component {
         </div>
         
         <div className="player">
-          <input type="range" min="0" max={this.audioRef.current?.duration} value={this.state.currTime} onChange={this.handleTimelineChange} />
+          <input
+            type="range"
+            min="0"
+            max={this.audioRef.current?.duration}
+            value={this.state.currTime}
+            onChange={this.handleTimelineChange}
+            disabled={this.state.addingNote}
+          />
           <img src={this.state.playing ? pauseButton : playButton} alt="play pause" onClick={this.togglePlay} className="playPause" />
           <audio ref={this.audioRef} src={audio} type='audio/flac' onTimeUpdate={this.timeUpdate} />
         </div>
