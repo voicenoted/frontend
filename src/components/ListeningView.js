@@ -89,6 +89,15 @@ class ListeningView extends React.Component {
         })
       });
 
+      let abc = await axios.get('https://voicenoted.herokuapp.com/getNotes', {
+        params: {
+          token: TOKENNNNNNNNN,
+          audioid: 1,
+        }
+      });
+
+      console.log(abc);
+
       await axios.post('http://localhost:8000/saveNote', {
         token: TOKENNNNNNNNN,
         timestamp: {
