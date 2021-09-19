@@ -1,4 +1,6 @@
 import React from "react";
+import SearchBar from "./SearchBar";
+import './CommunityView.css';
 
 class CommunityView extends React.Component {
 
@@ -7,10 +9,12 @@ class CommunityView extends React.Component {
     super(props)
   }
 
+class CommunityView extends React.Component {
   render() {
     return(
-      <div>
-        CommunityView
+      <div class="wrapper">
+        <div class="sectionHeader">Community</div>
+        <SearchBar/>
       </div>
     )
   }

@@ -1,4 +1,5 @@
 import React from "react";
+import SearchBar from "./SearchBar";
 
 class LibraryView extends React.Component {
 
@@ -9,8 +10,9 @@ class LibraryView extends React.Component {
 
   render() {
     return(
-      <div>
-        LibraryView
+      <div class="wrapper">
+        <div class="sectionHeader">Library</div>
+        <SearchBar/>
       </div>
     )
   }
